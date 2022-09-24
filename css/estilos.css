@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Edu+SA+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Fjalla+One&family=Lato:ital@1&family=Montserrat:wght@300&family=Mouse+Memoirs&family=Oswald:wght@200&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:wght@300&family=The+Nautigal:wght@700&family=Updock&display=swap');
 *{
     font-family: 'roboto', sans-serif ;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -11,29 +11,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-}
-
-
-.header{
-    background-color: rgb(93, 77, 85);
-    text-align: center;
-    height: 10%;
-}
-
-.header .nav__enlace{
-    /*Los enlaces son elementos en linea */
-    display:inline;
-    display: block;
-     /*el mejor de los dos mundos Brinda la posibilidad tener “padding” y “margin” hacia arriba y abajo.
-    */
-    display:inline-block;
-    text-decoration: none;
-    font-size: 2rem;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin:1%;
-    color: rgb(4, 3, 3);
-    background-color: rgb(220, 200, 223);
 }
 
 .bodyGraduaciones{
@@ -52,12 +29,8 @@ body{
     width: 100vw;
  }
 
-.clase__indice{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no repeat;
-    height: 100vh;
-}
+
+
 .fondo_el_deporte{
     background-image: url("../images/fondo_jigoro.jpeg");
     background-size: cover ;
@@ -139,10 +112,7 @@ body{
     height: 10%;
     width: 10%;
 }
-.bodyIndex_indice{
-    display: inline;
-    position:sticky
-}
+
 .titulos{
     flex: auto;
     align-items: center;
@@ -170,11 +140,7 @@ body{
 .parrafos{
     color: white;
 }
-.contenedor_indice{
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-}
+
 .clase_f_ormulario{
     background-color: aquamarine;
     color: black;
@@ -194,35 +160,26 @@ body{
     color: black;
 
 }
-ul {
-    list-style: none;
-    font-size:0 /* truco por el uso de inline-block*/
- }
- li {
-    display: inline-block;
-    width: 25%;
-    position:relative;
-    font-size: 14px
- }
- ul ul {
-    position: absolute;
-    display: none;
- }
- ul ul li {
-    display: block;
- }
- ul li:hover ul {
-    display:block;
- }
+
  .fondo_degradado{
     position: absolute;
     top:0;
     width: 100%;
-    background: rgba(0,0,0,.4);
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
+    background: rgba(0,0,0,.2);
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.625) 0,rgba(0,0,0,0) 30%,rgba(0, 0, 0, 0.225) 100%);
    /* background-image: linear-gradient(to top,rgb(0, 0, 0) 0,rgb(255, 0, 234) 60%,rgb(0, 0, 0) 100%);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%; 
+}
+.imagen{
+    width:100%;
+}
+.logo{
+    width:10%;
+}
+.colorCabeceras{
+    background-color: #6388c3;
+   
 }

@@ -5,52 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">  <!-- agrego css de Bootstrap--> 
     <link rel="stylesheet" href="./css/estilos.css"><!-- linkeo esta página con el CSS-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css"><!-- agrego css de Bootstrap--> 
     <link rel="shortcut icon" href="favicon.ico" > <!-- Le pongo un logo a la pestaña del explorador--> 
 </head>
 <body>
-    <div class="fondo_degradado">
-            <header>
-                <section class="container"></section>
-              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="./pages/el_deporte.html">El deporte</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink" role="button"> Graduaciones
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./pages/amarillo.html">Amarillo</a></li>
-                                <li><a class="dropdown-item" href="./pages/naranja.html">Naranja</a></li>
-                                <li><a class="dropdown-item" href="./pages/verde.html">Verde</a></li>
-                                <li><a class="dropdown-item" href="./pages/azul.html">Azul</a></li>
-                                <li><a class="dropdown-item" href="./pages/marron.html">Marrón</a></li>
-                                <li><a class="dropdown-item" href="./pages/negro.html">Negro</a></li>
-                            </ul>
-                            </li>
-                        </ul>
-                    </div>
-                        <a class="navbar-brand" href="./pages/eventos.html">Eventos</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand" href="./pages/contacto.html">Contacto</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                </div>
-              </nav>
-            </section>
-            </header>
+    <!-- <div class="fondo_degradado">-->
+        <header class="container-fluid colorCabeceras mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light colorCabeceras">
+            <div class="container-fluid align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo" src="./images/logo_athenas.jpg" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/el_deporte.html">El deporte</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Graduaciones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="pages/amarillo.html">Amarillo</a></li>
+                      <li><a class="dropdown-item" href="pages/naranja.html">Naranja</a></li>
+                      <li><a class="dropdown-item" href="pages/verde.html">verde</a></li>
+                      <li><a class="dropdown-item" href="pages/azul.html">Azul</a></li>
+                      <li><a class="dropdown-item" href="pages/marron.html">Marron</a></li>
+                      <li><a class="dropdown-item" href="pages/negro.html">Negro</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+             </div>
+            </div>
+          </nav>
+    </header>
             <main>
                 <section class="imagen__portada">
                     <img src="./images/kano_clase.jpeg" alt="Clase de Judo impartida por el fundador">
@@ -78,6 +80,5 @@
             </footer>
            </div>
            <script src="./js/bootstrap.bundle.min.js"></script>
-       <!--<script src="./js/bootstrap.bundle.min.js"></script>-->
     </body>
 </html>
