@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Edu+SA+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Fjalla+One&family=Lato:ital@1&family=Montserrat:wght@300&family=Mouse+Memoirs&family=Oswald:wght@200&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:wght@300&family=The+Nautigal:wght@700&family=Updock&display=swap');
+*{
+    font-family: 'roboto', sans-serif ;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../Images/fondo2_judo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.header{
+    background-color: rgb(93, 77, 85);
+    text-align: center;
+    height: 10%;
+}
+
+.header .nav__enlace{
+    /*Los enlaces son elementos en linea */
+    display:inline;
+    display: block;
+     /*el mejor de los dos mundos Brinda la posibilidad tener “padding” y “margin” hacia arriba y abajo.
+    */
+    display:inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin:1%;
+    color: rgb(4, 3, 3);
+    background-color: rgb(220, 200, 223);
+}
+
+.bodyGraduaciones{
+    background-color: black ;
+     height: 100vh;
+     width: 100vw;
+ }
+ .bodyEntos{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+ }
+ .bodyContacto{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+ }
+
+.clase__indice{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    height: 100vh;
+}
+.fondo_el_deporte{
+    background-image: url("../images/fondo_jigoro.jpeg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: repeat ;
+    height: 100vh;
+    width: 100vw;
+}
+.graduacion{
+    width: 100%;
+    height: 100%;
+     /*para centrar la caja*/
+    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    /*para que se ajuste al contenido*/
+    text-align: center;
+    align-items: center;
+    padding-left: 6%;
+   
+}
+.graduacion__cinturon{
+    width: 20%;
+    height: 50vh;/*tiene un alto maximo*/
+    border: 5px solid rgb(82, 80, 80);
+    padding:1%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;/*el excedente del contenido se corta*/
+    overflow: scroll;/*se le agrega un scroll para ver todo el contenido*/
+    overflow: auto;/*en caso de ser necesario se agrega un scroll, sino no se ve*/
+     /* MARGIN- son los espacios entre cada elemento y su borde*/
+     margin:1% 1% 1% 1%;
+    /* PADDING margen interno desde el borde hasta el contenido de la caja */
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:1%;
+    padding-right:1%;
+    /*abreviado*/
+    padding: 1% 1% 1% 1%;
+    /*BORDER- el borde de la caja
+     se forman con tres valores
+     grosor
+     tipo de borde
+     color*/
+     border-top:solid 5px rgb(46, 45, 45);	
+     border-right:solid 10px rgb(104, 105, 105);
+     border-bottom:solid 7px rgb(29, 29, 29);
+     border-left:solid 12px rgb(150, 150, 149);
+     border: solid 1px black;
+     border: none ;
+     border-radius: 2px;
+     box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
+     -webkit-box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
+     -moz-box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
+     float:left; 
+
+}
+.graduacion__cinturon__amarillo{
+    background-color: rgba(228, 240, 10, 0.513);
+}
+.graduacion__cinturon__naranja{
+    background-color: rgba(224, 123, 8, 0.612);
+}
+.graduacion__cinturon__verde{
+    background-color: rgba(9, 234, 12, 0.515);
+}
+.graduacion__cinturon__azul{
+    background-color: rgba(7, 69, 240, 0.579);
+}
+.graduacion__cinturon__marron{
+    background-color: rgba(72, 25, 4, 0.486);
+}
+.graduacion__cinturon__negro{
+    background-color: rgba(2, 2, 2, 0.694);
+}
+
+.imagen1{
+    height: 10%;
+    width: 10%;
+}
+.bodyIndex_indice{
+    display: inline;
+    position:sticky
+}
+.titulos{
+    flex: auto;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 42px;
+    font-weight: 800;
+}
+.subtitulos{
+    flex: auto;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.subtitulos2{
+    flex: auto;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+}
+.parrafos{
+    color: white;
+}
+.contenedor_indice{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+.clase_f_ormulario{
+    background-color: aquamarine;
+    color: black;
+}
+.imagen__portada{
+    flex: auto;
+    align-items: center;
+    position:relative;
+    width: 20%;
+    padding-left: 40%;
+
+}
+
+.cfooter__redes{
+    height: 2.5%;
+    width: 2.5%;
+    color: black;
+
+}
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 14px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+ .fondo_degradado{
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
+   /* background-image: linear-gradient(to top,rgb(0, 0, 0) 0,rgb(255, 0, 234) 60%,rgb(0, 0, 0) 100%);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+}
