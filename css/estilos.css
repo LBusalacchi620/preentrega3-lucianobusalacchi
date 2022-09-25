@@ -11,6 +11,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
 }
 
 .bodyGraduaciones{
@@ -39,74 +40,9 @@ body{
     height: 100vh;
     width: 100vw;
 }
-.graduacion{
-    width: 100%;
-    height: 100%;
-     /*para centrar la caja*/
-    margin:0 auto;
-    margin-left:auto;
-    margin-right:auto;
-    /*para que se ajuste al contenido*/
-    text-align: center;
-    align-items: center;
-    padding-left: 6%;
-   
-}
-.graduacion__cinturon{
-    width: 20%;
-    height: 50vh;/*tiene un alto maximo*/
-    border: 5px solid rgb(82, 80, 80);
-    padding:1%;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;/*el excedente del contenido se corta*/
-    overflow: scroll;/*se le agrega un scroll para ver todo el contenido*/
-    overflow: auto;/*en caso de ser necesario se agrega un scroll, sino no se ve*/
-     /* MARGIN- son los espacios entre cada elemento y su borde*/
-     margin:1% 1% 1% 1%;
-    /* PADDING margen interno desde el borde hasta el contenido de la caja */
-    padding-top:1%;
-    padding-bottom:1%;
-    padding-left:1%;
-    padding-right:1%;
-    /*abreviado*/
-    padding: 1% 1% 1% 1%;
-    /*BORDER- el borde de la caja
-     se forman con tres valores
-     grosor
-     tipo de borde
-     color*/
-     border-top:solid 5px rgb(46, 45, 45);	
-     border-right:solid 10px rgb(104, 105, 105);
-     border-bottom:solid 7px rgb(29, 29, 29);
-     border-left:solid 12px rgb(150, 150, 149);
-     border: solid 1px black;
-     border: none ;
-     border-radius: 2px;
-     box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
-     -webkit-box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
-     -moz-box-shadow: 1px 7px 22px 9px rgba(0,0,0,0.58);
-     float:left; 
 
-}
-.graduacion__cinturon__amarillo{
-    background-color: rgba(228, 240, 10, 0.513);
-}
-.graduacion__cinturon__naranja{
-    background-color: rgba(224, 123, 8, 0.612);
-}
-.graduacion__cinturon__verde{
-    background-color: rgba(9, 234, 12, 0.515);
-}
-.graduacion__cinturon__azul{
-    background-color: rgba(7, 69, 240, 0.579);
-}
-.graduacion__cinturon__marron{
-    background-color: rgba(72, 25, 4, 0.486);
-}
-.graduacion__cinturon__negro{
-    background-color: rgba(2, 2, 2, 0.694);
-}
+
+
 
 .imagen1{
     height: 10%;
@@ -161,18 +97,22 @@ body{
 
 }
 
- .fondo_degradado{
-    position: absolute;
-    top:0;
+  
+.fondo_degradado{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.7) url());
+    position: relative;
+    top:0%;
     width: 100%;
     background: rgba(0,0,0,.2);
     background-image:linear-gradient(to top,rgba(0, 0, 0, 0.625) 0,rgba(0,0,0,0) 30%,rgba(0, 0, 0, 0.225) 100%);
-   /* background-image: linear-gradient(to top,rgb(0, 0, 0) 0,rgb(255, 0, 234) 60%,rgb(0, 0, 0) 100%);*/
+    background-image: linear-gradient(to top,rgb(0, 0, 0) 0,rgb(255, 0, 234) 60%,rgb(0, 0, 0) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%; 
 }
+
 .imagen{
     width:100%;
 }
@@ -183,3 +123,163 @@ body{
     background-color: #6388c3;
    
 }
+@media screen and (max-width:1000px) and (orientation: landscape){
+    .piePagina{
+        height: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .piePagina{
+        height: 3rem;
+    }
+}
+.fondo{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../Images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.borroso{
+    backdrop-filter: blur(5px);
+    height:100%;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*pagina eventos y el deporte*/
+.contenedor1{
+    display: flex;
+    height:80vh;
+}
+
+.columna { 
+    width: 50%; 
+}
+.col-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    background:#3a1d1d;
+    background: linear-gradient(0deg,#3a1d1df6 0%,#442828f6 63%);
+    padding: 1rem 12rem 1rem 4rem;
+}
+
+.col-info p { line-height: 1.5; }
+
+.col-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/Jigoro-Kano.jpeg"); 
+}
+.col-img2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/judo.jpeg"); 
+}
+.col-img3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Images/imagen_index.jpeg"); 
+}
+
+.titulo {
+    margin: 0 0 1.6rem; 
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.titulo span {
+     color: #fff;
+     display: block;
+ }
+
+.parrafo1{
+    color: rgb(213, 201, 201);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*cuando es un celular */
+@media screen and (max-width: 768px){
+    .galeria{
+        width: 100%;
+        height:80vh;
+        display: flex;
+        align-items: center;
+    } 
+    .icon{
+        font-size: 1.5rem;
+    }
+    .piePagina{
+        height: 3rem;
+    }
+    /*nosotros*/
+    .col-info {
+       width:100%;
+       height: 100%;
+       padding:1rem;
+    }
+    .parrafo1{
+        font-size: 1.2rem;
+        line-height: 2.0;
+    }
+    .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .titulo span{
+       display:inline;
+    }
+    .ocultar{
+        display: none;
+    }
+    /* pagina contacto*/
+    .contenedorMain{
+       padding: 20px;  
+    }
+     
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        background-size: cover;
+        height: 100%;
+    }
+    .right{
+        padding: 25px 20px;
+    }
+}
+
+/*cuando es celular pero horizontal*/
+@media screen and (max-width:1000px) and (orientation: landscape){
+    h1{
+        font-size: 1.2rem;
+    }
+    .galeria{
+        display: flex;
+        justify-content: center;
+    } 
+    .carousel-item{
+        width:100%;
+        height: 55vh;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon{
+        font-size: 1.5rem;
+    }
+    .piePagina{
+        height: 3rem;
+    }
+
+}
+
