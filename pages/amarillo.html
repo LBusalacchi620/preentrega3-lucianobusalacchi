@@ -9,53 +9,93 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"><!-- agrego css de Bootstrap--> 
     <link rel="shortcut icon" href="../favicon.ico" > <!-- Le pongo un logo a la pestaña del explorador--> 
 </head>
-<body class="container-fluid fondo">
-    <div class="borroso">
-    <header class="container-fluid colorCabeceras mb-5">
-        <nav class="navbar navbar-expand-lg navbar-light colorCabeceras">
-            <div class="container-fluid align-items-center">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="">
-                            <img class="logo" src="../images/logo_athenas.jpg" alt="logo">
-                          </a>
-                      </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="el_deporte.html">El deporte</a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Graduaciones
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Amarillo</a></li>
-                      <li><a class="dropdown-item" href="naranja.html">Naranja</a></li>
-                      <li><a class="dropdown-item" href="verde.html">verde</a></li>
-                      <li><a class="dropdown-item" href="azul.html">Azul</a></li>
-                      <li><a class="dropdown-item" href="marron.html">Marron</a></li>
-                      <li><a class="dropdown-item" href="negro.html">Negro</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="eventos.html">Eventos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="eventos.html">Contacto</a>
-                  </li>
-                  </ul>
-             </div>
-            </div>
-          </nav>
-    </header>
-    <main>
+<body class="fondo"> <!-- Comienza el contenido ppal-->
+  <div class="borroso">
+      <header class="container-fluid colorCabeceras fixed-top row">
+          <nav class="navbar navbar-expand-md navbar-light s">
+              <div class="container-fluid align-items-center">
+                  <a class="navbar-brand" href="">
+                      <img class="logo" src="../images/logo_athenas.jpg" alt="logo"><!-- Pongo un logo en el navbar-->
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-white" href="..pages/el_deporte.html">El deporte</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Graduaciones
+                              </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item text-dark" href="..pages/amarillo.html">Amarillo</a></li>
+                              <li><a class="dropdown-item text-dark" href="..pages/verde.html">verde</a></li>
+                              <li><a class="dropdown-item text-dark" href="..pages/naranja.html">Naranja</a></li>
+                              <li><a class="dropdown-item text-dark" href="..pages/azul.html">Azul</a></li>
+                              <li><a class="dropdown-item text-dark" href="..pages/marron.html">Marron</a></li>
+                              <li><a class="dropdown-item text-dark" href="..pages/negro.html">Negro</a></li>
+                          </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-white" href="..pages/eventos.html">Eventos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-white" href="..pages/contacto.html">Contacto</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+        </nav>
+  </header>
+  <main class="mt-5">
+    <div class="divVideo">
+      <video autoplay muted loop class="video">
+        <source src="../assets/videos/Matrimonio-destock.mp4" type="video/mp4">
+       
+      </video>
+    </div>
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light fuenteCarrusel colorGaleria">Vestidos de Novia</h1>
+          <p class="lead text-white">Un diseño unico para cada Novia.</p>
+        
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail m-2"><img class="cover filtro imgHover" src="../Images/dai-nikkyo.jpeg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail m-2"><img class="cover filtro imgHover" src="../Images/dai_ikkyo2.jpeg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail m-2"><img class="cover filtro imgHover" src="../Images/dai_sankyo.jpeg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail m-2"><img class="cover filtro imgHover" src="../Images/dai_yonkyo.jpeg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail m-2"><img class="cover filtro imgHover" src="../Images/dai gokyo.jpeg" width="100%" height="100%"></div>
+       
+        <!--termina cinturon naranja--> 
+        <!--
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_4.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_5.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_6.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_7.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_8.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_9.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_11.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_12.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_13.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_14.jpg" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover filtro imgHover" src="../assets/img/pinina_15.jpg" alt="" width="100%" height="100%"></div>
+      </div>-->
+  
+    </section>
+  
+  </main>
+    <!--<main row>
         <section class="container">
             <H1 class="text-white">Proyecciones de Amarillo (Dai - Ikkyo)</H1>
             <h3 class="text-white">Se detallan las técnicas de proyecciones que se deben rendir para graduarse a cinturón Amarillo</h3>
@@ -94,7 +134,7 @@
                   </div>
               </div>
               <div></div>
-               <!--Comienza segunda fila de cards-->
+               Comienza segunda fila de cards
             <section class="container">
                 <div class="card-group">
                     <div class="card">
@@ -153,7 +193,7 @@
                   </div>
               </div>
     </section>
-    </main>
+    </main>-->
     <footer class=" colorCabeceras">
         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
             <button type="button" class="btn btn-outline-dark">INSTAGRAM</button>

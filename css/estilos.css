@@ -10,6 +10,14 @@ body{
     height: 100vh;
     width: 100vw;
 }
+.cabecerasize{
+    height: 15%;
+    width: 100%;
+}
+.mainsize{
+    height: 70%;
+    width: 100%;
+}
 
 .bodyGraduaciones{
     background-color: black ;
@@ -56,9 +64,7 @@ body{
     font-size: 20px;
     font-weight: 450;
 }
-.parrafos{
-    color: white;
-}
+
 
 .clase_f_ormulario{
     background-color: aquamarine;
@@ -88,9 +94,13 @@ body{
     width:10%;
 }
 .colorCabeceras{
-    background-color: #6388c3;
+    background-color:rgba(239, 224, 224, 0.24)
    
 }
+.colorfooter{
+    background-color: white;
+}
+
 @media screen and (max-width:1000px) and (orientation: landscape){
     .piePagina{
         height: 3rem;
@@ -126,7 +136,7 @@ body{
 }
 
 .columna { 
-    width: 50%; 
+    width: 60%; 
 }
 .col-info {
     display: flex;
@@ -134,9 +144,9 @@ body{
     align-items: baseline;
     justify-content: center;
     min-height: 100%;
-    background:#35401db8;
+    background:#a14f4f;
     background: linear-gradient(0deg,#3a1d1df6 0%,#442828f6 63%);
-    padding: 1rem 12rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .col-info p { line-height: 1.5; }
@@ -168,9 +178,12 @@ body{
 }
 
 .titulo {
+    display: flex;
     margin: 0 0 1.6rem; 
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;
 }
 .titulo span {
      color: #fff;
@@ -179,7 +192,7 @@ body{
 
 .parrafo1{
     color: rgb(213, 201, 201);
-    font-size: 1rem;
+    font-size: 0,7vh;
     line-height: 1.5;
 }
 
@@ -261,3 +274,22 @@ body{
 
 }
 
+.imgHover{
+  transition: all 2s;
+  z-index: -1;
+}
+.imgHover:hover{
+  filter: brightness(100%);
+  transform: scale(1.2);
+  z-index: 10;
+  overflow:hidden;
+  align-self: center;
+}
+.imgHover:click{
+  filter: brightness(100%);
+  transform: scale(1.5);
+ 
+  z-index: 10;
+  cursor:zoom-in;
+  align-self: center;
+}
