@@ -3,12 +3,10 @@
     width: 100%;
 }
 .colorCabeceras{
-    background-color:rgba(239, 224, 224, 0.24)
+    background-color:map-get($color,color-cabecera);
    
 }
-.colorfooter{
-    background-color: white;
-}
+
 .logo{
     height: 10%;
     width: 10%;

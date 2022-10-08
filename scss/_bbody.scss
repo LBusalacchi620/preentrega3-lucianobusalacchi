@@ -1,38 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
 *{
-    font-family: 'roboto', sans-serif ;
+    font-family: $fontgeneral ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    
-    height: 100vh;
-    width: 100vw;
+    height:100vh;
+    width:100vw;
 }
+/* uso anidado para el fondo del body*/
 .fondo{
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../Images/fondo.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-}
-.borroso{
-    backdrop-filter: blur(5px);
-    height:100%;
+    background:map-get($colores,gradiente),  url("../Images/fondo.jpg");
+    @include bgsize-bgatt-bgpos-bgrep;
+    .borroso{
+      backdrop-filter: blur(5px);
+      height:100%;
+    }
+  }
+
+.tamañocontainer{
+  height: 60vh;
 }
 .col-info {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
+    @include flex-column-baseline-center;
     min-height: 100%;
-    background:#a14f4f;
-    background: linear-gradient(0deg,#3a1d1df6 0%,#442828f6 63%);
+    background:get-map($colores,color-cabecera,gradiente__col-info);
     padding: 1rem 1rem 1rem 1rem;
+    p{line-height: 1.5}
 }
 
-.col-info p { line-height: 1.5; }
 
 .imgHover{
     transition: all 2s;
@@ -43,7 +42,7 @@ body{
     transform: scale(1.2);
     z-index: 10;
     overflow:hidden;
-    align-self: center;
+    align-self: $center;
   }
   /* animacion para cuando pasa se hace click en la imagen */
   .imgHover:click{
@@ -52,9 +51,12 @@ body{
    
     z-index: 10;
     cursor:zoom-in;
-    align-self: center;
+    align-self: $center;
   }
   .mainsize{
     height: 70%;
     width: 100%;
+}
+.imagen1{
+  height: 30%;
 }
