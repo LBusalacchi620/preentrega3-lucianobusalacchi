@@ -1,0 +1,60 @@
+*{
+    font-family: 'roboto', sans-serif ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    height: 100vh;
+    width: 100vw;
+}
+.fondo{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../Images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.borroso{
+    backdrop-filter: blur(5px);
+    height:100%;
+}
+.col-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    background:#a14f4f;
+    background: linear-gradient(0deg,#3a1d1df6 0%,#442828f6 63%);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.col-info p { line-height: 1.5; }
+
+.imgHover{
+    transition: all 2s;
+    z-index: -1;
+  }
+  .imgHover:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
+    z-index: 10;
+    overflow:hidden;
+    align-self: center;
+  }
+  /* animacion para cuando pasa se hace click en la imagen */
+  .imgHover:click{
+    filter: brightness(100%);
+    transform: scale(1.5);
+   
+    z-index: 10;
+    cursor:zoom-in;
+    align-self: center;
+  }
+  .mainsize{
+    height: 70%;
+    width: 100%;
+}

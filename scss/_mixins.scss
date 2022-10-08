@@ -1,0 +1,77 @@
+/* 
+
+.imagen1{
+    height: 10%;
+    width: 10%;
+}
+
+
+.imagen__portada{
+    flex: auto;
+    align-items: center;
+    position:relative;
+    width: 20%;
+    padding-left: 40%;
+
+}
+
+
+.imagen{
+    width:100%;
+}
+.logo{
+    width:10%;
+}
+/* estilos para las cabeceras y footer */
+
+
+/* estilos para el fondo de pantalla */
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*pagina eventos y el deporte*/
+.contenedor1{
+    display: flex;
+    height:80vh;
+}
+
+.columna { 
+    width: 60%; 
+}
+
+
+
+.opaco {
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+   
+.opaco:hover {
+    opacity:1.0;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.titulo {
+    display: flex;
+    margin: 0 0 1.6rem; 
+    text-transform: uppercase;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+.titulo span {
+     color: #fff;
+     display: block;
+ }
+
+.parrafo1{
+    color: rgb(213, 201, 201);
+    font-size: 0,7vh;
+    line-height: 1.5;
+}
+/* animacion para cuando pasa el cursor por encima de la imagen */
+
